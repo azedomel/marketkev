@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "descricao":"produto 1",
+        "preco":10.0,
+        "imagem":"../Assets/acucaruniao.jfif"
+
+    },
+    {
+        "id":2,
+        "descricao":"produto 2",
+        "preco":20.0,
+        "imagem":"../Assets/cafepele.jfif"
+    },
+    {
+        "id":3,
+        "descricao":"produto 3",
+        "preco":30.0,
+        "imagem":"../Assets/minhocascitricas.webp"
+    }
+]

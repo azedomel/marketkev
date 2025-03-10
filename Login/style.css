@@ -1,0 +1,101 @@
+:root{
+    --azulclaro: aliceblue;
+    --fundo: #10104ebe;  
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background-image: url(../Assets/fundocondor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--azulclaro);
+    
+}
+
+.container{
+    border: 2px solid var(--azulclaro);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    position: relative;
+    padding-top: 80px;
+}
+
+.img-logo{
+    position: absolute;
+    top: -20%;
+    border-radius: 100%;
+    border: 3px solid pink;
+}
+input, button{
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    background-color: var(--fundo);
+    color: var(--azulclaro);
+    border: 2px solid var(--azulclaro);
+    width: 100%;
+}
+
+button{
+    transition: all 200ms ease-in-out;
+}
+
+button:hover{
+    color: var(--fundo);
+    background-color: var(--azulclaro);
+    cursor: pointer;
+}
+.key{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    opacity: 0.7;
+    transition: all 200ms ease-in-out;
+}
+.key:hover{
+    opacity: 1;
+    transform:scale(1.1) rotate(90deg);
+    
+}
+
+.error-div{
+    display: none;
+    justify-content: center;
+    align-items:center;
+    gap: 2vw;
+    background-color:pink;
+    color: var(--fundo);
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 999px;
+    width: 90%;
+}
+.error-div button{
+    width: 100px;
+    background-color: var(--fundo);
+    border: 2px solid var(--fundo);
+}
+
+.error-div button:hover{
+width: 100px;
+background-color: var(--azulclaro);
+border: 2px solid var(--fundo)
+}

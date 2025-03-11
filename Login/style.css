@@ -1,6 +1,6 @@
 :root{
-    --azulclaro: aliceblue;
-    --fundo: #10104ebe;  
+    --azulclaro: rgb(208, 233, 255);
+    --fundo: #07075e;  
 }
 *{
     padding: 0;
@@ -15,8 +15,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(2,0,36);
-    background-image: url(../Assets/fundocondor.jpg);
+    background: rgb(14, 20, 102);
+    background: radial-gradient(circle, rgb(27, 32, 102) 43%, rgb(6, 107, 128) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--azulclaro);
@@ -25,12 +25,14 @@ body{
 
 .container{
     border: 2px solid var(--azulclaro);
+    font-size: 15px;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2vh;
     position: relative;
     padding-top: 80px;
@@ -39,8 +41,11 @@ body{
 .img-logo{
     position: absolute;
     top: -20%;
-    border-radius: 100%;
-    border: 3px solid pink;
+    transition: all 150ms linear;
+}
+
+.img-logo:hover{
+    transform: scale(1.04);
 }
 input, button{
     padding: 10px;
@@ -71,22 +76,28 @@ button:hover{
 }
 .key:hover{
     opacity: 1;
-    transform:scale(1.1) rotate(90deg);
-    
+    transform:scale(1.1) rotate(50deg);
 }
 
 .error-div{
     display: none;
     justify-content: center;
     align-items:center;
-    gap: 2vw;
-    background-color:pink;
+    flex-direction: column;
+    gap: 1vw;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgb(44, 78, 251) 0%, rgba(68,41,203,1) 100%);
     color: var(--fundo);
     padding: 5px;
     position: absolute;
     bottom: 10px;
     border-radius: 999px;
-    width: 90%;
+    width: 50%;
+    transition: all 200ms ease-in-out;
+}
+
+.error-div:hover{
+    transform: scale(1.01);
 }
 .error-div button{
     width: 100px;
@@ -98,4 +109,20 @@ button:hover{
 width: 100px;
 background-color: var(--azulclaro);
 border: 2px solid var(--fundo)
+}
+
+@media (width < 559px){
+    .error-div{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        border-radius: 40px;
+        color: var(--azulclaro);
+    }
+
+    .error-div:hover{
+        display: flex;
+    }
+
 }

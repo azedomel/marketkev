@@ -8,7 +8,7 @@ window.onload = function(){
     document.getElementById("user").textContent = user.name
     document.getElementById("perfil").textContent = user.name
     document.getElementById("idPerfil").textContent = user.id
-};
+}
 
 document.addEventListener("DOMContentLoaded", function(){
     //fetch dos produtos e armazenamento na variavel global

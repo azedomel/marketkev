@@ -16,34 +16,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" type="imagex/png" href="../Assets/icon.ico">
 </head>
+
 <body class="body">
-    
     <header class="header">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img class="img-logo" src="../assets/logo.png" alt="Logo" width="40px" height="auto"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="dot icon"><img  src="../Assets/dot.png"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                
                 <div class="navbar-nav">
                     <a class="a" href="../Carrinho">Ir para o carrinho</a>
-                    <p class="perfil">Olá, </p>
-                    <h4 id="perfil"></h4>
-                        <br>
+                    
+                    <div class="perfil">Olá, <p id="perfil"></p></div>
+                      
                         <div class="idPerfil">Protocolo atual: <p id="idPerfil"></p>
                         </div>
                 </div>
               </div>
             </div>
           </nav>
-        
     </header>
+
     </div>
     <br><br>
-    <h1>LOJA</h1>
+    <h1>Market</h1>
     <p>Bem vindo <span id="user"></span>, escolha seus produtos!</p>
     <br>
     <h2>Produtos</h2>
@@ -51,5 +52,7 @@
     <div class="wrap">
         <div id="produtos-container" class="row center"></div>
     </div>
+
+    <div id="imagem-container"></div>
 </body>
 </html>

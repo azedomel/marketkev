@@ -1,8 +1,8 @@
 :root{
     --preto: #000000;
-    --azul: #1693a5;
-    --cinza: #d8d8c0;
-    --cinza-claro: #f0f0d8;
+    --azul: #015197;
+    --cinza: #393939;
+    --bege: #b5b598;
     --branco: #ffffff;
 }
 
@@ -12,42 +12,65 @@
     box-sizing: border-box;
 }
 
-.wrap{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.navbar {
     width: 100%;
-    height: auto;
+    min-height: auto;
+    background-color: var(--cinza);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
     padding: 10px;
 }
 
-.header {
-    width: 90%;
-    height: auto;
-    background-color: var(--cinza-claro);
-    color: rgb(255, 150, 150);
-    border-radius: 999px;
-    display: flex;
-    justify-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    text-wrap: wrap;
+#navbarNavAltMarkup{
+    transition: all 0.2s;
 }
 
-h4{
+.a{
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 10px;
+    width: auto;
+}
+
+.idPerfil{
+    color: #1693a5;
+    display: flex;
+    margin-top: 11px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.perfil{
+    color: violet;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 10px;
+    width: auto;
+    margin-top: 11px;
+}
+
+ #perfil{
     color: violet;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding-right: 10px;
 }
+
 
 .body{
     display: flex;
@@ -62,13 +85,20 @@ h4{
     gap: 20px;
     font-family: "Poppins", sans-serif;
     color: var(--branco);
-    background: rgb(20,168,162);
-background: linear-gradient(0deg, rgba(20,168,162,1) 0%, rgba(11,9,65,1) 100%);
+    background: var(--bege);
 }
 
-.a{
-    color: blueviolet;
+.wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 10px;
 }
+
 
 @media (max-width: 768px){
     .header{

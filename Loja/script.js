@@ -1,32 +1,3 @@
-// Substitua 'YOUR_ACCESS_KEY' pela sua chave de acesso do Unsplash
-const accessKey = 'IOKYSSRsHJJt8tnbuOVplLmCb59F0XH11jQ_yLj-XJE';
-
-// Função para buscar imagens aleatórias relacionadas a "supermercado"
-function buscarImagens() {
-  fetch(`https://api.unsplash.com/photos/random?query=supermarket&client_id=${accessKey}`)
-    .then(response => response.json())  // Converte a resposta para JSON
-    .then(data => {
-      // Exibindo a URL da primeira imagem (você pode mostrar mais, se quiser)
-      console.log(data[0].urls.small);  // URL da imagem
-      mostrarImagemNaTela(data[0].urls.small);
-    })
-    .catch(error => console.error('Erro ao buscar imagem:', error));
-}
-
-// Função para exibir a imagem na página HTML
-function mostrarImagemNaTela(urlImagem) {
-  const imgElement = document.createElement('img');
-  imgElement.src = urlImagem;
-  imgElement.alt = "Imagem de supermercado";
-  imgElement.style.width = '300px';  // Ajuste o tamanho da imagem conforme necessário
-
-  // Exibindo a imagem em um elemento HTML
-  document.getElementById('imagem-container').appendChild(imgElement);
-}
-
-// Chamando a função para buscar as imagens
-buscarImagens();
-
 // declaração de variavel produtos, global
 let produtos
 
